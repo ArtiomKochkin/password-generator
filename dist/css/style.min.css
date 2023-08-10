@@ -146,6 +146,16 @@ body {
   margin-bottom: 2rem;
 }
 
+@media screen and (max-width: 500px) {
+  .footer__contacts {
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+  .footer__contacts .footer__link--tel {
+    margin-top: 1rem;
+  }
+}
+
 .footer__link {
   color: #b99999;
   text-decoration: none;
@@ -183,10 +193,25 @@ body {
   font-size: 4.8rem;
   margin-bottom: 2rem;
 }
+@media screen and (max-width: 500px) {
+  .generator__title {
+    font-size: 4rem;
+  }
+}
 
 .generator__desc {
   font-size: 2rem;
   line-height: 1.3;
+}
+@media screen and (max-width: 768px) {
+  .generator__desc {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .generator__desc {
+    font-size: 1.6rem;
+  }
 }
 
 .generator__form {
@@ -211,9 +236,24 @@ body {
 .form__items {
   padding-left: 5rem;
 }
+@media screen and (max-width: 500px) {
+  .form__items {
+    padding-left: 0;
+  }
+}
 
 .form__item {
   margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: row;
+}
+@media screen and (max-width: 768px) {
+  .form__item:first-child {
+    flex-direction: column;
+  }
+  .form__item:first-child .form__label {
+    margin-bottom: 1rem;
+  }
 }
 
 .form__label {
@@ -267,6 +307,11 @@ input[type=range]::-webkit-slider-thumb {
   position: relative;
   bottom: 3px;
 }
+@media screen and (max-width: 500px) {
+  input[type=range] {
+    width: 15rem;
+  }
+}
 
 input[type=checkbox]:checked + .form__label::before {
   background: url("../../img/main/check.svg") 0 0 no-repeat;
@@ -317,6 +362,11 @@ input[type=checkbox] {
   font-size: 3rem;
   margin-right: 1rem;
 }
+@media screen and (max-width: 500px) {
+  .result__char {
+    font-size: 2rem;
+  }
+}
 
 .btn {
   border: none;
@@ -335,4 +385,10 @@ input[type=checkbox] {
 .btn:hover {
   background: #b99999;
   color: #251a1a;
+}
+@media screen and (max-width: 500px) {
+  .btn {
+    width: 100%;
+    font-size: 1.8rem;
+  }
 }

@@ -19,8 +19,10 @@
                     <div class="form__items">
                         <div class="form__item">
                             <label class="form__label form__label--range">Длина пароля (от 4 до 32)</label>
-                            <input type="range" min="4" max="32" value="8" class="form__range">
-                            <input type="text" class="form__range-text" value="8" disabled>
+                            <div class="form__range-box">
+                                <input type="range" min="4" max="32" value="8" class="form__range">
+                                <input type="text" class="form__range-text" value="8" disabled>
+                            </div>
                         </div>
                         <div class="form__item">
                             <input type="checkbox" class="form__checkbox" checked id="upperCase">
@@ -53,6 +55,17 @@
             <div class="generator__result result show">
                 <h2 class="result__title">Пароль: </h2>
                 <div class="result__characters">
+                    <span class="result__char">Q</span>
+                    <span class="result__char">Q</span>
+                    <span class="result__char">Q</span>
+                    <span class="result__char">Q</span>
+                    <span class="result__char">Q</span>
+                    <span class="result__char">Q</span>
+                    <span class="result__char">Q</span>
+                    <span class="result__char">Q</span>
+                    <span class="result__char">Q</span>
+                    <span class="result__char">Q</span>
+                    <span class="result__char">Q</span>
                     <span class="result__char">Q</span>
                 </div>
                 <button class="btn btn--copy" type="button">Скопировать пароль</button>

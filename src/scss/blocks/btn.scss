@@ -16,4 +16,9 @@
         background: $gray;
         color: $dark;
     }
+
+    @include breakpoint($mobile) {
+        width: 100%;
+        font-size: 1.8rem;
+    }
 }

@@ -16,6 +16,17 @@
     margin-bottom: 2rem;
 }
 
+.footer__contacts {
+    @include breakpoint($mobile) {
+        flex-direction: column;
+        margin-bottom: 1rem;
+        
+        .footer__link--tel {
+            margin-top: 1rem;
+        }
+    }
+}
+
 .footer__link {
     color: $gray;
     text-decoration: none;

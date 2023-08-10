@@ -15,10 +15,26 @@
 
 .form__items {
     padding-left: 5rem;
+
+    @include breakpoint($mobile) {
+        padding-left: 0;
+    }
 }
 
 .form__item {
     margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: row;
+
+    &:first-child {
+        @include breakpoint($tablet) {
+            flex-direction: column;
+
+            .form__label {
+                margin-bottom: 1rem;
+            }
+        }
+    }
 }
 
 .form__label {
@@ -78,6 +94,10 @@ input[type=range] {
         border-radius: 1rem;
         position: relative;
         bottom: 3px;
+    }
+
+    @include breakpoint($mobile) {
+        width: 15rem;
     }
 }
 

@@ -22,4 +22,8 @@
     color: $gray;
     font-size: 3rem;
     margin-right: 1rem;
+
+    @include breakpoint($mobile) {
+        font-size: 2rem;
+    }
 }
