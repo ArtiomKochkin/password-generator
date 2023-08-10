@@ -1,0 +1,25 @@
+.result {
+    display: none;
+
+    &.show {
+        display: block;
+    }
+}
+.result__title {
+    font-size: 2rem;
+    color: $gray;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.result__characters {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.result__char {
+    color: $gray;
+    font-size: 3rem;
+    margin-right: 1rem;
+}

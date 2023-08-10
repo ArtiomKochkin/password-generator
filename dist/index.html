@@ -14,7 +14,14 @@
 <body>
     <header class="header">
     <div class="wrapper">
-        <div class="header__logo">Password GENERATOR</div>
+        <div class="header__inner">
+            <div class="header__logo">Password GENERATOR</div>
+            <div class="header__contact">
+                <a href="https://github.com/ArtiomKochkin" target="_blank" class="header__link">
+                    <img class="header__img" src="../img/header/github.svg" alt="link to github">
+                </a>
+            </div>
+        </div>
     </div>
 </header>
     <main class="generator">
@@ -28,9 +35,47 @@
             <form action="#" class="form generator__form">
                 <fieldset class="form__settings">
                     <legend class="form__name">Настройки генератора</legend>
-                    
+                    <div class="form__items">
+                        <div class="form__item">
+                            <label class="form__label form__label--range">Длина пароля (от 4 до 32)</label>
+                            <input type="range" min="4" max="32" value="8" class="form__range">
+                            <input type="text" class="form__range-text" value="8" disabled>
+                        </div>
+                        <div class="form__item">
+                            <input type="checkbox" class="form__checkbox" checked id="upperCase">
+                            <label for="upperCase" class="form__label">Верхний регистр</label>
+                        </div>
+                        <div class="form__item">
+                            <input type="checkbox" class="form__checkbox" id="lowerCase">
+                            <label for="lowerCase" class="form__label">Нижний регистр</label>
+                        </div>
+                        <div class="form__item">
+                            <input type="checkbox" class="form__checkbox" checked id="numbers">
+                            <label for="numbers" class="form__label">Цифры</label>
+                        </div>
+                        <div class="form__item">
+                            <input type="checkbox" class="form__checkbox" id="specialCharacters">
+                            <label for="specialCharacters" class="form__label">Спецсимволы</label>
+                        </div>
+                        <div class="form__item">
+                            <input type="radio" id="eng" name="lang" class="form__radio" checked>                        
+                            <label for="eng" class="form__label form__label--radio">Английский язык</label>
+                        </div>
+                        <div class="form__item">
+                            <input type="radio" id="rus" name="lang" class="form__radio">                        
+                            <label for="rus" class="form__label form__label--radio">Русский язык</label>
+                        </div>
+                    </div>
                 </fieldset>
+                <button class="btn btn--generation" type="button">Сгенерировать</button>
             </form>
+            <div class="generator__result result show">
+                <h2 class="result__title">Пароль: </h2>
+                <div class="result__characters">
+                    <span class="result__char">Q</span>
+                </div>
+                <button class="btn btn--copy" type="button">Скопировать пароль</button>
+            </div>
         </div>
     </main>
     <footer class="footer">

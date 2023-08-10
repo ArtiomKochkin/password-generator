@@ -2,8 +2,17 @@
     background-color: $dark;
     padding: 2rem 0;
 }
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 .header__logo {
     cursor: pointer;
     color: $gray;
+}
+
+.header__img {
+    width: 3rem;
 }
