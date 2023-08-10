@@ -1,0 +1,42 @@
+.footer {
+    padding: 3rem 0 0;
+    background-color: $dark;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    transition: all linear 0.5s;
+}
+
+.footer__contacts, 
+.footer__social {
+    @include flex(center, center);
+    margin-bottom: 2rem;
+}
+
+.footer__link {
+    color: $gray;
+    text-decoration: none;
+    font-size: 1.4rem;
+    transition: all linear .2s;
+    margin: 0 1rem;
+    text-transform: uppercase;
+
+    &:hover,
+    &:active,
+    &:focus {
+        color: lighten($gray, 20%);
+    }
+}
+
+.footer__copyright {
+    width: 100%;
+    background-color: darken($dark, 2%);
+    padding: 1.5rem 0;
+    color: $gray; 
+    line-height: 1.2;
+    text-align: center;
+}

@@ -1,6 +1,7 @@
 @import "vendor/reset";
 @import "vars";
 @import "mixins";
+@import "fonts";
 
 *, *::after, *::before {
     box-sizing: border-box;
@@ -11,7 +12,17 @@ html {
 }
 
 body {
-    background-color: black;
+    background-color: $white;
     font-size: 1.4rem;
-    color: white;
+    color: $black;
+    font-family: ubuntu;
 }
+
+.wrapper {
+    @include container(130rem, 1.5rem);
+}
+
+@import "blocks/header";
+@import "blocks/footer";
+@import "blocks/generator";
+@import "blocks/form";

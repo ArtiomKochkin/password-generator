@@ -5,8 +5,21 @@
     })
 <body>
     @@include('html/header.html', {})
-    <main class="main">
-        MAIN
+    <main class="generator">
+        <div class="wrapper">
+            <div class="generator__header">
+                <h1 class="generator__title">Генератор паролей</h1>
+                <p class="generator__desc">
+                    Генератор паролей - это онлайн-инструмент, позволяющий генерировать сложные и надежные пароли онлайн. Данные пароли досточно хорошо защищены от подбора злоумышленниками.  Для генерации пароля выберите его настройки и нажмите "Сгенерировать".
+                </p>
+            </div>
+            <form action="#" class="form generator__form">
+                <fieldset class="form__settings">
+                    <legend class="form__name">Настройки генератора</legend>
+                    
+                </fieldset>
+            </form>
+        </div>
     </main>
     @@include('html/footer.html', {})
     <script src="js/app.min.js"></script>

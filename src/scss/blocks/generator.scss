@@ -1,0 +1,24 @@
+.generator {
+    background-color: lighten($dark, 5%);
+    padding: 5rem 0;
+}
+
+.generator__header {
+    color: $white;
+    max-width: 45rem;
+    margin-bottom: 3rem;
+}
+
+.generator__title {
+    font-size: 4.8rem;
+    margin-bottom: 2rem;
+}
+
+.generator__desc {
+    font-size: 2rem;
+    line-height: 1.1;
+}
+
+.generator__form {
+    color: $white;
+}
