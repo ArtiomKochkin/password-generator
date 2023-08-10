@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     @@include('html/head.html', {
-        "title": "Главная"
+        "title": "Генератор паролей"
     })
 <body>
     @@include('html/header.html', {})
@@ -20,8 +20,8 @@
                         <div class="form__item">
                             <label class="form__label form__label--range">Длина пароля (от 4 до 32)</label>
                             <div class="form__range-box">
-                                <input type="range" min="4" max="32" value="8" class="form__range">
-                                <input type="text" class="form__range-text" value="8" disabled>
+                                <input id="rangeSettings" type="range" min="4" max="32" value="8" class="form__range">
+                                <input id="rangeText" type="text" class="form__range-text"  value="8">
                             </div>
                         </div>
                         <div class="form__item">
@@ -54,11 +54,9 @@
                 </fieldset>
                 <button class="btn btn--generation" type="button">Сгенерировать</button>
             </form>
-            <div class="generator__result result show">
+            <div class="generator__result result">
                 <h2 class="result__title">Пароль: </h2>
-                <div class="result__characters">
-                    <span class="result__char">Q</span>
-                </div>
+                <div class="result__characters"></div>
                 <button class="btn btn--copy" type="button">Скопировать пароль</button>
             </div>
         </div>
