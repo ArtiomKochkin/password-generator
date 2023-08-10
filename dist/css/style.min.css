@@ -235,6 +235,7 @@ body {
 
 .form__items {
   padding-left: 5rem;
+  margin-bottom: 3rem;
 }
 @media screen and (max-width: 500px) {
   .form__items {
@@ -314,7 +315,7 @@ input[type=range]::-webkit-slider-thumb {
 }
 
 input[type=checkbox]:checked + .form__label::before {
-  background: url("../../img/main/check.svg") 0 0 no-repeat;
+  background: url("../img/main/check.svg") 0 0 no-repeat;
 }
 
 input[type=radio]:checked + .form__label::before {
