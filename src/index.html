@@ -54,10 +54,13 @@
                 </fieldset>
                 <button class="btn btn--generation" type="button">Сгенерировать</button>
             </form>
-            <div class="generator__result result">
+            <div class="generator__result result show">
                 <h2 class="result__title">Пароль: </h2>
-                <div class="result__characters"></div>
-                <button class="btn btn--copy" type="button">Скопировать пароль</button>
+                <div id="passwordResult" class="result__characters">QW23v6cd</div>
+                <button id="btnCopy" class="btn btn--copy" type="button">Скопировать пароль</button>
+                <div id="resultCopy" class="result__copy">
+                    <span id="copiedPassword" class="result__copy-password"></span>
+                </div>
             </div>
         </div>
     </main>

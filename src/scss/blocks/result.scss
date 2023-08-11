@@ -13,17 +13,25 @@
 }
 
 .result__characters {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.result__char {
+    text-align: center;
     color: $gray;
     font-size: 3rem;
-    margin-right: 1rem;
+    letter-spacing: 1px;
 
     @include breakpoint($mobile) {
         font-size: 2rem;
     }
+}
+
+.result__copy {
+    color: $gray;
+    font-size: 1.6rem;
+    text-align: center;
+    transition: all linear 0.3s;
+}
+
+.result__copy-password {
+    padding-bottom: 3px;
+    border-bottom: 1px solid $gray;
+    transition: all linear 0.3s;
 }

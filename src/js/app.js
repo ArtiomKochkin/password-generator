@@ -6,3 +6,6 @@ range.range();
 
 import * as lang from "./operations/lang.js";
 lang.lang();
+
+import * as copy from "./operations/copyPassword.js";
+copy.copyPassword();

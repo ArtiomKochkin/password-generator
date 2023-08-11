@@ -353,24 +353,31 @@ input[type=checkbox] {
 }
 
 .result__characters {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.result__char {
+  text-align: center;
   color: #b99999;
   font-size: 3rem;
-  margin-right: 1rem;
+  letter-spacing: 1px;
 }
 @media screen and (max-width: 500px) {
-  .result__char {
+  .result__characters {
     font-size: 2rem;
   }
 }
 
+.result__copy {
+  color: #b99999;
+  font-size: 1.6rem;
+  text-align: center;
+  transition: all linear 0.3s;
+}
+
+.result__copy-password {
+  padding-bottom: 3px;
+  border-bottom: 1px solid #b99999;
+  transition: all linear 0.3s;
+}
+
 .btn {
-  border: none;
   background: none;
   outline: none;
   color: #b99999;
