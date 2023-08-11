@@ -9,3 +9,6 @@ lang.lang();
 
 import * as copy from "./operations/copyPassword.js";
 copy.copyPassword();
+
+import * as password from "./operations/password.js";
+password.password();
