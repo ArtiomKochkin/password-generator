@@ -357,6 +357,15 @@ input[type=checkbox] {
   color: #b99999;
   font-size: 3rem;
   letter-spacing: 1px;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  white-space: nowrap;
+}
+@keyframes type {
+  from {
+    width: 0;
+  }
 }
 @media screen and (max-width: 500px) {
   .result__characters {

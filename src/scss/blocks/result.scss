@@ -17,6 +17,14 @@
     color: $gray;
     font-size: 3rem;
     letter-spacing: 1px;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    white-space: nowrap;
+
+    @keyframes type {
+        from { width: 0; }
+    }
 
     @include breakpoint($mobile) {
         font-size: 2rem;
